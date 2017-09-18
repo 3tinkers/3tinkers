@@ -14,8 +14,8 @@ GameObj.HomeState = {
         startLabel.anchor.set(0.5);
 
         var creditStyle = { font: '8px PrStart', fill: '#fff' };
-        var createdByLabel = this.game.add.text(10, (this.game.world.height - 30), 'PROGRAMMING', startStyle);
-        var creatorLabel = this.game.add.text(10, (this.game.world.height - 15), 'JEREMY JACKSON', creditStyle);
+        //var createdByLabel = this.game.add.text(10, (this.game.world.height - 30), 'PROGRAMMING', startStyle);
+        //var creatorLabel = this.game.add.text(10, (this.game.world.height - 15), 'JEREMY JACKSON', creditStyle);
     },
     update: function() {
         if (this.game.input.activePointer.isDown) {
