@@ -42,7 +42,7 @@ window.onresize = function() {
 window.onkeyup = dealWithKeyboardMash;
 
 buttonSettings.addEventListener('click', toggleSettings);
-buttonAbout.addEventListener('click', toggleWhat);
+buttonAbout.addEventListener('click', resetTraces);
 
 decay.addEventListener('input', updateDecay);
 pixelSize.addEventListener('input', updatePixelSize);
