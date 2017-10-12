@@ -89,7 +89,7 @@
       window.location.href="/";
     }  
     </script>
-    <body onload="loadContent()">
+    <body>
         <canvas id="canvas" width="480" height="720" style="
     padding: 0;
     margin: auto;
@@ -101,6 +101,10 @@
     display: block;"></canvas>
         <script src="game.min.js"></script>
 
-	
+	     <script>
+       $(function() {
+          loadContent();
+       })
+       </script>
     </body>
 </html>
