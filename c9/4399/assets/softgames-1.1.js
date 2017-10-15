@@ -65,7 +65,7 @@ var SG = {
         SG.checkLoadingScreenUrl();
         
         if(SG.loadingScreenUrl == '') {
-            SG.showLoadingDots()
+            SG.showLoadingImage()
         }
         else{
             SG.showLoadingImage();
