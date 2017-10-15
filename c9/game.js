@@ -51505,14 +51505,14 @@ var Unit_MainMenu = BaseUnit.extend({
         this.logo = new cc.Sprite("#Logo.png");
         this.logo.x = cc.winSize.width / 2;
         this.logo.y = cc.winSize.height - 180;
-        //this.addChild(this.logo);
+        this.addChild(this.logo);
 
         this.buttonPlay = new ccui.Button();
         this.buttonPlay.setTouchEnabled(true);
         this.buttonPlay.loadTextures("bPlay.png", "", "", ccui.Widget.PLIST_TEXTURE);
         this.buttonPlay.addTouchEventListener(this.pressPlay, this);
-        this.buttonPlay.x = size.width / 2 - 160;
-        this.buttonPlay.y = 140;
+        this.buttonPlay.x = size.width / 2;
+        this.buttonPlay.y = 200;
         this.addChild(this.buttonPlay);
 
         if (cc.sys.isNative) {
@@ -51524,7 +51524,7 @@ var Unit_MainMenu = BaseUnit.extend({
             this.buttonMore.addTouchEventListener(this.gotoSite, this);
             this.buttonMore.x = size.width / 2 - 160;
             this.buttonMore.y = 140;
-            //this.addChild(this.buttonMore);
+            this.addChild(this.buttonMore);
         }
 
         this.buttonChars = new ccui.Button();
